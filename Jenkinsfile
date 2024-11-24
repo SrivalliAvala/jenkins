@@ -3,8 +3,8 @@ pipeline {
         label 'jenkins-agent'
     }
     options{
-        timeout(time: 1, unit: 'MINUTES')   -----timeframe within which pipeline should complete build
-        disableConcurrentBuilds()   ----to ensure that same pipeline will not run multiple times simultaneously 
+        timeout(time: 1, unit: 'MINUTES')   //-----timeframe within which pipeline should complete build
+        disableConcurrentBuilds()   //----to ensure that same pipeline will not run multiple times simultaneously 
         // retry(1)
     }
     parameters {
