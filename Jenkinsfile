@@ -1,8 +1,6 @@
 pipeline {
-    agent any
-    options {
-        // Timeout counter starts AFTER agent is allocated
-        timeout(time: 1, unit: 'SECONDS')
+    agent{
+        label 'jenkins-agent'
     }
     stages {
         stage('Build') {
