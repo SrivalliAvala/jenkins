@@ -4,7 +4,7 @@ pipeline {
 
     }
     options{
-        timeout(time: 1, unit: 'MINUTES')   //-----timeframe within which pipeline should complete build
+        timeout(time: 2, unit: 'MINUTES')   //-----timeframe within which pipeline should complete build
         disableConcurrentBuilds()   //----to ensure that same pipeline will not run multiple times simultaneously 
         // retry(1)
     }
