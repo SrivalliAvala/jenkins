@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 script[
-                    sh "echo this is build stage"
+                    sh 'echo this is build stage'
                 ]
             }
         }
