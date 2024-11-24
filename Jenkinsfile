@@ -1,6 +1,7 @@
 pipeline {
     agent{
         label 'jenkins-agent'
+        
     }
     options{
         timeout(time: 1, unit: 'MINUTES')   //-----timeframe within which pipeline should complete build
